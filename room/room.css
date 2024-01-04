@@ -19,9 +19,13 @@ body {
 
 main {
     width: auto;
+    height: auto;
+
     display: flex;
     flex-wrap: wrap;
+    margin: 8%;
     padding: 20px;
+
     background-color: rgb(212, 189, 199);
     border-radius: 30px;
 
