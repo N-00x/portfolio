@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+body {
+    margin: 10%;
+}
+
+main {
+    display: flex;
+    flex-flow:column ;
+
+    width: auto;
+    padding: 30px;
+    border-radius: 10px;
+
+    font-family: 'Yusei Magic', sans-serif;
+    background-color: rgb(212, 189, 199);
+    color: #5e3636;
+
+    /*アニメーション*/
+    animation-name: fadein;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.first {
+    order: 0;
+
+    text-align: center;
+    font-size: 60px;
+
+    display:flex ;
+    
+}
+.header {
+  order:1;
+
+  flex-grow: 1;
+}
+.modoru {
+    order: 0;
+    flex-basis: 0;
+}
+
+.modoru img {
+
+    width: 100px;
+    height: 100px;
+
+    filter: invert(100%) sepia(80%) hue-rotate(200deg);
+}
+
+.prof {
+    order: 1;
+    margin-top: 50px;
+
+    border: 10px solid #5e3636a9;
+    border-radius: 1%;
+
+}
+.second {
+  order:1;
+
+  display:flex ;
+  justify-content: space-around;
+
+}
+.text1 {
+    order: 1;
+    flex-basis: 30%;
+    padding-left: 30px;
+
+    font-size: 18px;
+}
+
+.text2 {
+    order: 1;
+    flex-basis: 42%;
+
+    padding-left: 30px;
+    border-left: 0.3vw solid #855e5e;
+
+}
+
+/*プロフ*/
+
+
+p {
+    margin: 3px;
+}
+
+.koumoku {
+    font-size: 18px;
+    background-color: #855e5e52;
+    border-radius: 5px;
+}
+
+ruby {
+
+    ruby-align: center;
+    text-align: center;
+}
+
+
+
+
+.answer2 {
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+
+
+/*文字アニメーション*/
+.header {
+    animation-name: fadein2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadein2 {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.modoru,
+img {
+    animation-name: fadein3;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    opacity: 0;
+}
+
+.modoru img:hover {
+    transition: 0.3s;
+    filter: invert(80%) sepia(100%) hue-rotate(250deg);
+
+}
+
+@keyframes fadein3 {
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.text1,
+.text2 {
+    animation-name: fadein3;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+    opacity: 0;
+}
+
+@keyframes fadein3 {
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*フッター*/
+
+.footer {
+    order: 4;
+
+    flex-basis: 100%;
+    padding-top: 10px;
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: 50;
+
+    color: #FFF;
+
+    animation-name: fadein4;
+    animation-fill-mode: forwards;
+    animation-duration: 5.5s;
+    opacity: 0;
+}
+
+
+@keyframes fadein4 {
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
