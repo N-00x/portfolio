@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    width: 1200px;
+    width: auto;
     height: 580px;
     display: flex;
     flex-wrap: wrap;
