@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 body {
-margin: 10%;
     /*fadeアニメ全体*/
     animation-name: fadein;
     animation-duration: 3s;
@@ -20,7 +19,6 @@ margin: 10%;
 
 main {
     width: auto;
-    height: 580px;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
